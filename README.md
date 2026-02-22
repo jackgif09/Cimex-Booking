@@ -19,3 +19,7 @@ Cimex-Booking is an AI-assisted ASP.NET Core MVC project for a solo exterminatio
 - **M5**: Admin operations portal
 - **M6**: Deployment and operational hardening
 - **M7**: SaaS readiness and tenant boundaries
+
+## Execution guidance
+
+- See `docs/next-step.md` for the recommended immediate implementation step and completion criteria.
