@@ -1,0 +1,40 @@
+name: Feature request
+description: Track a new feature implementation
+title: "[Feature] "
+labels:
+  - feature
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What feature should be implemented?
+      placeholder: Describe the problem and proposed feature.
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: What must be true for this work to be complete?
+      placeholder: List functional and technical requirements.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Acceptance criteria checklist
+      options:
+        - label: Behavior is implemented as described
+        - label: Edge cases are addressed
+        - label: Documentation is updated if needed
+    validations:
+      required: true
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Technical notes
+      description: Any implementation details, constraints, or references.
+      placeholder: Add relevant architecture, data, or dependency notes.
+    validations:
+      required: false

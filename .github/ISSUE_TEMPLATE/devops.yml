@@ -1,0 +1,40 @@
+name: DevOps task
+description: Track infrastructure, CI/CD, or operational work
+title: "[DevOps] "
+labels:
+  - devops
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What DevOps change is needed and why?
+      placeholder: Describe the operational problem or improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: What must this work deliver?
+      placeholder: Include environment, security, or reliability requirements.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Acceptance criteria checklist
+      options:
+        - label: Change is applied and validated in target environment
+        - label: Rollback or mitigation approach is documented
+        - label: Runbook/docs are updated if applicable
+    validations:
+      required: true
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Technical notes
+      description: Pipelines, IaC notes, commands, or dependencies.
+      placeholder: Add implementation specifics.
+    validations:
+      required: false

@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a defect that needs fixing
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is broken and what did you expect?
+      placeholder: Include current behavior, expected behavior, and impact.
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: What conditions must be satisfied by the fix?
+      placeholder: Include scope, guardrails, and constraints.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Acceptance criteria checklist
+      options:
+        - label: Root cause is identified and fixed
+        - label: Regression risk is addressed
+        - label: Verification steps are documented
+    validations:
+      required: true
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Technical notes
+      description: Logs, stack traces, hypotheses, or related links.
+      placeholder: Add technical context for implementation.
+    validations:
+      required: false
